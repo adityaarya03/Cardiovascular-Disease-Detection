@@ -14,7 +14,7 @@ function App() {
     exerciseangia: '',
     oldpeak: '',
     slope: '',
-    noofmajorvessels: ''
+    noofmajorvessels: '',
   });
   const [predictions, setPredictions] = useState(null);
 
@@ -38,9 +38,9 @@ function App() {
         <input type="number" name="restingBP" value={formData.restingBP} onChange={handleChange} placeholder="Resting BP" />
         <input type="number" name="serumcholestrol" value={formData.serumcholestrol} onChange={handleChange} placeholder="Serum Cholesterol" />
         <input type="number" name="fastingbloodsugar" value={formData.fastingbloodsugar} onChange={handleChange} placeholder="Fasting Blood Sugar" />
-        <input type="text" name="restingrelectro" value={formData.restingrelectro} onChange={handleChange} placeholder="Resting ECG" />
+        <input type="text" name="restingrelectro" value={formData.restingrelectro} onChange={handleChange} placeholder="Resting Electro" />
         <input type="number" name="maxheartrate" value={formData.maxheartrate} onChange={handleChange} placeholder="Max Heart Rate" />
-        <input type="number" name="exerciseangia" value={formData.exerciseangia} onChange={handleChange} placeholder="Exercise Angina" />
+        <input type="text" name="exerciseangia" value={formData.exerciseangia} onChange={handleChange} placeholder="Exercise Angina" />
         <input type="number" name="oldpeak" value={formData.oldpeak} onChange={handleChange} placeholder="Old Peak" />
         <input type="number" name="slope" value={formData.slope} onChange={handleChange} placeholder="Slope" />
         <input type="number" name="noofmajorvessels" value={formData.noofmajorvessels} onChange={handleChange} placeholder="No of Major Vessels" />
